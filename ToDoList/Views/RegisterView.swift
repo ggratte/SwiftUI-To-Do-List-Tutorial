@@ -10,8 +10,9 @@ import SwiftUI
 struct RegisterView: View {
     var body: some View {
         VStack{
-            HeaderView()
+            HeaderView(title: "Register", subtitle: "Start organizing todos", angle: -15, background: .orange)
         }
+        Spacer()
     }
 }
 
