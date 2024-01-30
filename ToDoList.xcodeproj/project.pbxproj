@@ -34,6 +34,7 @@
 		7A93A5CE2B6770A700ABF322 /* RegisterViewVM.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A93A5CD2B6770A700ABF322 /* RegisterViewVM.swift */; };
 		7A93A5D02B6770BB00ABF322 /* ToDoListItemViewVM.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A93A5CF2B6770BB00ABF322 /* ToDoListItemViewVM.swift */; };
 		7A93A5D22B67769D00ABF322 /* HeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A93A5D12B67769D00ABF322 /* HeaderView.swift */; };
+		7A93A5D42B67AC4700ABF322 /* TLButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A93A5D32B67AC4700ABF322 /* TLButton.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -82,6 +83,7 @@
 		7A93A5CD2B6770A700ABF322 /* RegisterViewVM.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterViewVM.swift; sourceTree = "<group>"; };
 		7A93A5CF2B6770BB00ABF322 /* ToDoListItemViewVM.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ToDoListItemViewVM.swift; sourceTree = "<group>"; };
 		7A93A5D12B67769D00ABF322 /* HeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeaderView.swift; sourceTree = "<group>"; };
+		7A93A5D32B67AC4700ABF322 /* TLButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TLButton.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -181,6 +183,7 @@
 				7A93A5BB2B676FC000ABF322 /* RegisterView.swift */,
 				7A93A5BD2B676FED00ABF322 /* ToDoListItemView.swift */,
 				7A93A5D12B67769D00ABF322 /* HeaderView.swift */,
+				7A93A5D32B67AC4700ABF322 /* TLButton.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -364,6 +367,7 @@
 				7A93A5B62B676F8C00ABF322 /* ToDoListView.swift in Sources */,
 				7A93A5C42B67704800ABF322 /* MainViewVM.swift in Sources */,
 				7A93A5BC2B676FC000ABF322 /* RegisterView.swift in Sources */,
+				7A93A5D42B67AC4700ABF322 /* TLButton.swift in Sources */,
 				7A93A5C62B67705900ABF322 /* ProfileViewVM.swift in Sources */,
 				7A93A5B42B676F7500ABF322 /* ProfileView.swift in Sources */,
 				7A93A5C02B67701F00ABF322 /* User.swift in Sources */,
