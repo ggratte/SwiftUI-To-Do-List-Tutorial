@@ -16,8 +16,17 @@ struct LoginView: View {
             VStack{
                 // Header
                 HeaderView(title: "To Do List", subtitle: "Get things done", angle: 15, background: .pink)
+
+
+
                 // Login Form
                 Form {
+
+                    if !VM.errorMessage.isEmpty {
+                        Text(VM.errorMessage)
+                            .foregroundColor(.red)
+                    }
+
                     TextField("Email address", text: $VM.email)
                         .textFieldStyle(RoundedBorderTextFieldStyle())
                         .autocorrectionDisabled()
@@ -28,7 +37,7 @@ struct LoginView: View {
                         .textFieldStyle(RoundedBorderTextFieldStyle())
                     
                     TLButton(title: "Log In", background: .blue) {
-                        //Attempt login
+                        VM.login()
                     }
                     .padding()
                 }
