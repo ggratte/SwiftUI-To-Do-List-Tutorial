@@ -35,6 +35,7 @@
 		7A93A5D02B6770BB00ABF322 /* ToDoListItemViewVM.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A93A5CF2B6770BB00ABF322 /* ToDoListItemViewVM.swift */; };
 		7A93A5D22B67769D00ABF322 /* HeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A93A5D12B67769D00ABF322 /* HeaderView.swift */; };
 		7A93A5D42B67AC4700ABF322 /* TLButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A93A5D32B67AC4700ABF322 /* TLButton.swift */; };
+		7A93A5D82B69FA5A00ABF322 /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A93A5D72B69FA5A00ABF322 /* Extensions.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -84,6 +85,7 @@
 		7A93A5CF2B6770BB00ABF322 /* ToDoListItemViewVM.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ToDoListItemViewVM.swift; sourceTree = "<group>"; };
 		7A93A5D12B67769D00ABF322 /* HeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeaderView.swift; sourceTree = "<group>"; };
 		7A93A5D32B67AC4700ABF322 /* TLButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TLButton.swift; sourceTree = "<group>"; };
+		7A93A5D72B69FA5A00ABF322 /* Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -217,6 +219,7 @@
 				7A93A5AD2B676A7C00ABF322 /* GoogleService-Info.plist */,
 				7A93A5792B67670900ABF322 /* ToDoListApp.swift */,
 				7A93A57D2B67670A00ABF322 /* Assets.xcassets */,
+				7A93A5D72B69FA5A00ABF322 /* Extensions.swift */,
 			);
 			path = Other;
 			sourceTree = "<group>";
@@ -375,6 +378,7 @@
 				7A93A5CC2B67709000ABF322 /* LoginViewVM.swift in Sources */,
 				7A93A57A2B67670900ABF322 /* ToDoListApp.swift in Sources */,
 				7A93A5D02B6770BB00ABF322 /* ToDoListItemViewVM.swift in Sources */,
+				7A93A5D82B69FA5A00ABF322 /* Extensions.swift in Sources */,
 				7A93A5C22B67702C00ABF322 /* ToDoListItem.swift in Sources */,
 				7A93A5CA2B67707D00ABF322 /* NewItemViewVM.swift in Sources */,
 				7A93A5C82B67706F00ABF322 /* ToDoListViewVM.swift in Sources */,

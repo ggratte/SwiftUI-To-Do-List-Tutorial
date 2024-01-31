@@ -4,6 +4,8 @@
 //
 //  Created by Göran Gratte on 2024-01-29.
 //
+
+import FirebaseFirestore
 import FirebaseAuth
 import Foundation
 
@@ -15,11 +17,23 @@ class RegisterViewVM: ObservableObject {
     func register(){
         guard validate() else {return}
 
-        Auth.auth().createUser(withEmail: email, password: password) { result, error in
+        Auth.auth().createUser(withEmail: email, password: password) { [weak self] result, error in
             guard let userId = result?.user.uid else {
                 return
             }
+
+            self?.insertUserRecord(id: userId)
         }
+    }
+
+    private func insertUserRecord(id: String){
+        let newUser = User(id: id, name: name, email: email, joined: Date.timeIntervalSinceReferenceDate)
+
+        let db = Firestore.firestore()
+
+        db.collection("users")
+            .document(id)
+            .setData(newUser.asDictionary())
     }
 
     private func validate() -> Bool {
