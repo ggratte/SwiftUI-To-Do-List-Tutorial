@@ -6,8 +6,13 @@
 //
 
 import Foundation
+import Firebase
 
 /// ViewModel for a single to do list item view(each row in the list)
 class ToDoListItemViewVM: ObservableObject {
     init(){}
+
+    func toggleIsDone(item: ToDoListItem){
+
+    }
 }

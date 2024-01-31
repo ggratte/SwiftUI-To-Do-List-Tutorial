@@ -13,4 +13,8 @@ class ToDoListViewVM: ObservableObject {
 
     @Published var showingNewItemView: Bool = false
     init(){}
+
+    func delete(itemId: String) {
+        
+    }
 }
