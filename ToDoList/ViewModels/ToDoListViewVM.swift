@@ -10,5 +10,7 @@ import Foundation
 /// ViewModel for list of items view
 /// Primary tab
 class ToDoListViewVM: ObservableObject {
+
+    @Published var showingNewItemView: Bool = false
     init(){}
 }
