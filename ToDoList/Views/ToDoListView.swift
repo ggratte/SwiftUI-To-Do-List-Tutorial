@@ -10,12 +10,12 @@ import FirebaseFirestoreSwift
 
 struct ToDoListView: View {
 
-    @StateObject var VM = ToDoListViewVM()
+    @StateObject var VM: ToDoListViewVM
     @FirestoreQuery var items: [ToDoListItem]
 
     init(userId: String){
         self._items = FirestoreQuery(collectionPath: "users/\(userId)/todos")
-
+        self._VM = StateObject(wrappedValue: ToDoListViewVM(userId: userId))
     }
     var body: some View {
         NavigationView{
