@@ -8,6 +8,12 @@
 import SwiftUI
 
 struct ToDoListView: View {
+
+    @StateObject var VM = ToDoListViewVM()
+
+    init(userId: String){
+        
+    }
     var body: some View {
         NavigationView{
             VStack{
@@ -27,5 +33,5 @@ struct ToDoListView: View {
 
 
 #Preview {
-    ToDoListView()
+    ToDoListView(userId: "")
 }

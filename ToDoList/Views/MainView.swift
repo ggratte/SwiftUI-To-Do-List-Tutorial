@@ -13,19 +13,24 @@ struct MainView: View {
     var body: some View {
         
         if VM.isSignedIn && !VM.currentUserId.isEmpty {
-            TabView {
-                ToDoListView()
-                    .tabItem{Label("Home", systemImage: "house")}
-
-                ProfileView()
-                    .tabItem{Label("Profile", systemImage: "person.circle")}
-            }
+            accountView
 
         } else {
             LoginView()
         }
 
         
+    }
+
+    @ViewBuilder
+    var accountView: some View {
+        TabView {
+            ToDoListView(userId: VM.currentUserId)
+                .tabItem{Label("Home", systemImage: "house")}
+
+            ProfileView()
+                .tabItem{Label("Profile", systemImage: "person.circle")}
+        }
     }
 }
 
